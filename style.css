@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+.logo{
+    font-family: 'Fredoka';
+    font-weight: 700;
+    font-size: 50px;
+    color: #6C8054;
+}
+
+.main-width{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #EBC6A9;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://img.freepik.com/free-vector/color-grunge-pattern-liquidity-style-background_1409-1432.jpg?w=900&t=st=1674700419~exp=1674701019~hmac=dd757b53d70b8e3b36a3027c5ab1a7332ae8a72d65a5a87c7afd4f5d0f5c9477) no-repeat; */
+}
+
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .hamb{
+    width: 35px;
+    height: 24px;
+    right: 3%;
+    top: 60px;
+    z-index: 5;
+    /* background: #6C8054; */
+    cursor: pointer;
+    display: none;
+}
+
+nav .hamb span{
+    display: block;
+    background: #6C8054;
+    width: 100%;
+    height: 5px;
+    border-radius: 20px;
+    transition: .3s;
+    transition-property: transform, opacity;
+}
+
+nav .hamb span{
+    margin: 3px 0px
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li{
+    display: inline-block;
+}
+
+.nav-list li a{
+    display: inline-block;
+    color: white;
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav .nav-list li:not(:last-child) a:hover{
+    color:#DC9C74;
+    transition: .4s;
+}
+
+nav .nav-list li.btn a{
+    display: inline-block;
+    border: 2px solid #DC9C74;
+    padding: 5px 25px;
+    border-radius: 30px;
+    color: #DC9C74;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+nav .nav-list li.btn a:hover{
+    background-color:#DC9C74;
+    color: white;
+    border: 2px solid transparent;
+    transition: .4s
+}
+
+.container{
+    margin-top: 120px;
+}
+
+.container .hero-text{
+    margin-bottom: 40px;
+}
+
+.container .hero-text h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+
+span{
+    color: #6C8054;
+    font-family: 'Fredoka';
+}
+
+.container .hero-text h3{
+    color: #DC9C74;
+}
+
+.container .hero-text p{
+    width: 440px;
+    max-width: 100%;
+    color: #DC9C74;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #6C8054;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: white;
+    margin-bottom: 35px;
+}
+
+.social a:hover{
+    transform: scale(1.1);
+    background-color: #6C8054;
+    color: white;
+    transition: .4s;
+}
+
+.container .hero-text button{
+    color: white;
+    background-color:#DC9C74;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid #DC9C74;
+}
+
+.container .hero-text button:hover{
+    background: transparent;
+    border: 3px solid #DC9C74;
+    color: #DC9C74;
+    transition: .4s;
+}
+
+/* .bottom{
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+
+.bottom p{
+    color: #DC9C74;
+    letter-spacing: 2px;
+    font-size: 15px;
+} */
