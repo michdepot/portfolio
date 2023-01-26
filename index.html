@@ -14,7 +14,7 @@
         <div class="main-width">
             <header>
                 <div class="logo">
-                    M
+                    m
                 </div>
 
                 <nav>
@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="hero-text">
                     <h3>Hi, there!</h3>
-                    <h1>I am <span>Michelle Maglapus</span></h1>
+                    <h1>I am <span class="name"></span></h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quo ab nisi maiores qui, deserunt quos eaque accusamus est hic, quae reprehenderit natus adipisci architecto.</p>
 
                     <div class="social">
@@ -48,6 +48,8 @@
                     <button type="button">see more</button>
                 </div>
 
+                
+
                 <!-- <div class="bottom">
                     <p>&#169; copyright 2023 - all rights reserved.</p>
                 <div> -->
@@ -56,5 +58,15 @@
     </section>
 
     <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".name",{
+            strings:["Michelle Maglapus.", "a Web Developer.", "a UI/UX Designer.", "a Digital Content Creator."],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
 </body>
 </html>

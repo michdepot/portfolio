@@ -7,6 +7,10 @@
     font-family: 'Poppins';
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .logo{
     font-family: 'Fredoka';
     font-weight: 700;
@@ -26,7 +30,6 @@
     height: 100%;
     min-height: 100vh;
     background-color: #EBC6A9;
-    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://img.freepik.com/free-vector/color-grunge-pattern-liquidity-style-background_1409-1432.jpg?w=900&t=st=1674700419~exp=1674701019~hmac=dd757b53d70b8e3b36a3027c5ab1a7332ae8a72d65a5a87c7afd4f5d0f5c9477) no-repeat; */
 }
 
 header{
@@ -46,6 +49,7 @@ nav .hamb{
     /* background: #6C8054; */
     cursor: pointer;
     display: none;
+    position: absolute;
 }
 
 nav .hamb span{
@@ -56,6 +60,7 @@ nav .hamb span{
     border-radius: 20px;
     transition: .3s;
     transition-property: transform, opacity;
+    /* display: none; */
 }
 
 nav .hamb span{
@@ -86,16 +91,16 @@ nav .nav-list li:not(:last-child) a:hover{
 
 nav .nav-list li.btn a{
     display: inline-block;
-    border: 2px solid #DC9C74;
+    border: 2px solid #6C8054;
     padding: 5px 25px;
     border-radius: 30px;
-    color: #DC9C74;
+    color: #6C8054;
     line-height: 1.5;
     font-weight: 400;
 }
 
 nav .nav-list li.btn a:hover{
-    background-color:#DC9C74;
+    background-color:#6C8054;
     color: white;
     border: 2px solid transparent;
     transition: .4s
@@ -103,7 +108,9 @@ nav .nav-list li.btn a:hover{
 
 .container{
     margin-top: 120px;
+    display: flex;
 }
+
 
 .container .hero-text{
     margin-bottom: 40px;
@@ -187,3 +194,69 @@ span{
     letter-spacing: 2px;
     font-size: 15px;
 } */
+
+@media screen and (max-width: 930px){
+    nav .hamb{
+        display: initial;
+    }
+
+    .click{
+        top: 46px;
+    }
+    .click span{
+        position: absolute;
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(40deg);
+        top: 0;
+    }
+
+    nav .nav-list{
+        /* display: none; */
+        position: absolute;
+        top: 90px;
+        right: -65%;
+        bottom: 0;
+        width: 30%;
+        height: 60%;
+        background-color: rgba(0, 0, 0, .5);
+        /* opacity: .5; */
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+        border-radius: 10px;
+    }
+    nav .nav-list li{
+        display: block;
+    }
+    nav .nav-list a{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        margin-left: 0;
+        margin-bottom: 40px;
+        font-weight: 400;
+    }
+    nav .nav-list li.btn a{
+        position: absolute;
+        bottom: 0;
+        right: 20%;
+        left: 20%;
+        padding: 7px 15px;
+        font-size: 14px;
+        color: #EBC6A9;
+        border: 2px solid #EBC6A9;
+    }
+
+    nav .nav-list.open{
+        right: 0;
+    }
+
+}
